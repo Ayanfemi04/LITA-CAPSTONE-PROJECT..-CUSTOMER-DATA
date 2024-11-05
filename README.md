@@ -26,7 +26,8 @@ From the analysis, i was able to deduce that the Region with the highest Revenue
 
  From the Analysis, it was observed that the Customers with the highest subscription are from the Western part with a total of  1,635,000   customers.  While the  customers who subscribed from the South  are 1,620,000 in nuber.  the Eastern and Northern part hav e a total of 1,627,500 and 1,612,500 respectively.
 
-![image](https://github.com/user-attachments/assets/d270902f-c755-4d47-bb4f-7bfe403dd7cb)
+![image](https://github.com/user-attachments/assets/7c02829b-41d2-4e09-babc-83a858ed4df8)
+
 
 from the analysis, we were able to summarize the total revenue generated based on the subscription type. the Basic type of subscription has a Total Revenue of #29,843,597 , hence, the with the largest number of subscriber. followed by Premium with a total of  #15,051,884 and Standard with a total of #15, 021,236
 
