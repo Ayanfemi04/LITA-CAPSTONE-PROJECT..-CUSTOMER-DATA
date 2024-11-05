@@ -50,7 +50,17 @@ From the analysis, i was able to deduce that the Region with the highest Revenue
 ---
 ![image](https://github.com/user-attachments/assets/7c02829b-41d2-4e09-babc-83a858ed4df8)
 
-From the analysis, we were able to summarize the total revenue generated based on the subscription type. the Basic type of subscription has a Total Revenue of #29,843,597 , hence, the with the largest number of subscriber. followed by Premium with a total of  #15,051,884 and Standard with a total of #15, 021,236
+####   CONCLUSIONS AND RECOMMENDATIONS
+From the analysis, we were able to summarize the total revenue generated based on the subscription type. the Basic type of subscription has a Total Revenue of #29,843,597 , hence, the with the largest number of subscriber. followed by Premium with a total of  #15,051,884 and Standard with a total of #15, 021,236.
+   Hence the Service Providers should;
+   
+   * Create necessary awareness( most especially in regions where low sales are recorded), about the subscrption types they offer, stating the benefits attached to them.
+   * give discounted rates, incentives to new customers
+   * introduce impactful and educational programmes that can positively influence their viewers.
+   
+   
+
+
 
 
     
