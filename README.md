@@ -1,5 +1,18 @@
 # LITA-CAPSTONE-PROJECT... CUSTOMER-DATA
 
+ [PROJECT OVERVIEW](#project-overview)
+
+ [DATA INFORMATION](#data-information)
+
+[DATA CLEANING AND TOOLS USED](#data-cleaning-and-tools)
+
+[EXPLORATORY ANALYSIS](#exploratory-analysis)
+
+[DATA VISUALISATION](#data-visualisation)
+
+[CONCLUSIONS AND RECOMMENDATIONS](#conclusions-and-recommendations)
+---
+
 ## PROJECT OVERVIEW
 ---
 This project aims at providing insights into a customer data set which includes subscription trends and behavior to support strategic decision-making, The analysis will dive into understanding subscription patterns, cancellation trends, and top-performing subscription types, regional breakdowns of customer activity. The goal is to enable the company to make data-driven decisions that improve customer satisfaction, and drive revenue growth. 
