@@ -50,6 +50,9 @@ From the analysis, i was able to deduce that the Region with the highest Revenue
 ---
 ![image](https://github.com/user-attachments/assets/7c02829b-41d2-4e09-babc-83a858ed4df8)
 
+![image](https://github.com/user-attachments/assets/b8910db0-6639-4f8f-a2ca-22da4aa5bef2)
+
+
 
 ![image](https://github.com/user-attachments/assets/7dd027fc-c770-4116-8fc5-dbfa35df0e38)
 
