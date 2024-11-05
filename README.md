@@ -1,4 +1,4 @@
-# LITA-CAPSTONE-PROJECT..-CUSTOMER-DATA
+# LITA-CAPSTONE-PROJECT... CUSTOMER-DATA
 
 ## PROJECT OVERVIEW
 ---
@@ -36,6 +36,110 @@ The EDA involves the following key questions;
     What is the average subscription duration for all customers.
 
 #### DATA ANALYSIS
+
+I used some basic lines of code, queries, Dax functions in the course of this Analysis. Some of which are;
+
+```SQL
+
+####  ** SQL QUERIES FOR CUSTOMER DATA PROJECT**************
+
+........TOTAL NUMBER OF CUSTOMERS IN EACH REGION......
+   select region,COUNT(customerid) as
+   totalcutomers from[dbo].[LITACAPSTONE CUSTOMER DATA]
+   group by region
+
+   TABLE 1.1
+   region	totalcutomers
+   North	         18750
+   East	         18750
+   South	         18750
+  West	         18750
+
+....THE MOST POPULAR SUBSCRIPTION TYPE.........
+SELECT TOP (1) subscriptiontype,
+COUNT(customerid) as mostpopularsubscriptiontype
+from[dbo].[LITACAPSTONE CUSTOMER DATA]
+group by subscriptiontype 
+order by
+mostpopularsubscriptiontype
+DESC
+
+TABLE 1.2
+subscriptiontype
+Basic
+
+.......CUSTOMERS WHO CANCELLED THEIR SUBSCRIPTION WITHIN 6 MONTHS....
+SELECT Customername,subscriptionstart,
+subscriptionend from[dbo].[LITACAPSTONE CUSTOMER DATA]
+where canceled = 'TRUE'
+
+......AVERAGE SUBSCRIPTION DURATION FORMAT ALL CUSTOMERS.......
+SELECT
+ count(customerid) as
+ All_customers, AVG(DATEDIFF(DAY,Subscriptionstart,subscriptionend)) as
+ Average_subscription_duration
+ from[dbo].[LITACAPSTONE CUSTOMER DATA]
+ where SubscriptionEnd is not null
+
+TABLE 1.3
+All_customers
+75000
+
+.......CUSTOMERS WITH SBSCRIPTION LONGER THAN 12MONTHS.....
+select customername, subscriptiontype,subscriptionstart,subscriptionend
+from[dbo].[LITACAPSTONE CUSTOMER DATA]
+where DATEDIFF(MONTH,SubscriptionStart,subscriptionend) >=12
+
+ .....TOTAL REVENUE BY SUBSCRIPTION TYPE.....
+ select subscriptiontype,
+ SUM(Revenue) AS TotalRevenue
+ from[dbo].[LITACAPSTONE CUSTOMER DATA]
+ GROUP BY subscriptiontype
+ ORDER BY TotalRevenue DESC
+
+TABLE 1.4
+subscriptiontype	TotalRevenue
+   Basic	            74756784
+   Premium	         37580782
+   Standard	         37482120
+
+ ........TOP 3 REGIONS BY SUBSCRIPTION CANCELLATION......
+
+ select top (3) Region,COUNT(customerid) as cancellations
+ from[dbo].[LITACAPSTONE CUSTOMER DATA]
+ where canceled = 'TRUE'
+ GROUP BY Region 
+ ORDER BY Cancellations DESC;
+
+TABLE 1.5
+Region	cancellations
+West	      11250
+South	      11250
+North      	11250
+
+......TOTAL NUMBER OF ACTIVE AND CANCELLED SUBSCRIPTION.....
+ select
+ SUM(CASE WHEN Canceled ='TRUE' THEN 1 ELSE 0 END)
+ AS TotalCanceled,
+ sum(CASE WHEN canceled ='FALSE' THEN 1 ELSE 0 END)
+ AS TotalActive
+ From [dbo].[LITACAPSTONE CUSTOMER DATA];
+
+TABLE1.6
+TotalCanceled	TotalActive
+   33750	         41250
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 ![image](https://github.com/user-attachments/assets/60eb452e-635e-473b-92ed-35fe99c312f8)
 
@@ -45,11 +149,11 @@ From the analysis, i was able to deduce that the Region with the highest Revenue
 ---
 ![image](https://github.com/user-attachments/assets/931e886b-aa15-48a8-820e-baa2482595e2)
 
- From the Analysis, it was observed that the Customers with the highest subscription are from the Western part with a total of  1,635,000   customers.  While the  customers who subscribed from the South  are 1,620,000 in nuber.  the Eastern and Northern part hav e a total of 1,627,500 and 1,612,500 respectively.
+ From the Analysis, it was observed that the Customers with the highest subscription are from the Western part with a total of  1,635,000 customers.  While the customers who subscribed from the South  are 1,620,000 in number.  the Eastern and Northern part have a total of 1,627,500 and 1,612,500 respectively.
 ---
 ![image](https://github.com/user-attachments/assets/7c02829b-41d2-4e09-babc-83a858ed4df8)
 
-from the analysis, we were able to summarize the total revenue generated based on the subscription type. the Basic type of subscription has a Total Revenue of #29,843,597 , hence, the with the largest number of subscriber. followed by Premium with a total of  #15,051,884 and Standard with a total of #15, 021,236
+From the analysis, we were able to summarize the total revenue generated based on the subscription type. the Basic type of subscription has a Total Revenue of #29,843,597 , hence, the with the largest number of subscriber. followed by Premium with a total of  #15,051,884 and Standard with a total of #15, 021,236
 
 
     
