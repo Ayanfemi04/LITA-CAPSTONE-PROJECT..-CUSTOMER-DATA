@@ -20,11 +20,6 @@ The EDA involves the following key questions;
 
 
 
-![image](https://github.com/user-attachments/assets/377a18ce-fe29-4ce2-a420-df5a40ed8b02)
-
-
-![image](https://github.com/user-attachments/assets/6e90e837-96d2-4d7e-97d0-b7996bc657d1)
-
 
 
 ![image](https://github.com/user-attachments/assets/2a84b04d-3407-4763-9cd3-bc7dffcda101)
